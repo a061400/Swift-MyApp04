@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyApp04" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="svQ-VC-2g9">
+                                <rect key="frame" x="16" y="600.5" width="343" height="66.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R7V-Fj-J23">
+                                        <rect key="frame" x="0.0" y="0.0" width="106.5" height="66.5"/>
+                                        <color key="backgroundColor" red="0.76134226630000001" green="1" blue="0.38927712749999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="重新開始"/>
+                                        <connections>
+                                            <action selector="h3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qfI-py-W4w"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bfN-bh-So0">
+                                        <rect key="frame" x="118.5" y="0.0" width="106" height="66.5"/>
+                                        <color key="backgroundColor" red="0.82277125630000003" green="0.75477490339999997" blue="0.48284100790000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="設定模式"/>
+                                        <connections>
+                                            <action selector="h2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LUx-Mt-xkx"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bh3-Aq-cui">
+                                        <rect key="frame" x="236.5" y="0.0" width="106.5" height="66.5"/>
+                                        <color key="backgroundColor" red="0.59138304779999995" green="0.97562818399999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="離開遊戲"/>
+                                        <connections>
+                                            <action selector="h1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PXE-08-Epo"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="spZ-oG-fgh">
+                                <rect key="frame" x="16" y="20" width="343" height="66.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ep3-hy-Vuz">
+                                        <rect key="frame" x="274.5" y="0.0" width="68.5" height="66.5"/>
+                                        <color key="backgroundColor" red="0.82277125634517767" green="0.75477490339429076" blue="0.48284100786937995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="開始猜"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="doGuess:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aHg-HM-UPF"/>
+                                        </connections>
+                                    </button>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bEw-q2-Dp3">
+                                        <rect key="frame" x="0.0" y="0.0" width="266.5" height="66.5"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="bEw-q2-Dp3" secondAttribute="bottom" id="6EB-0W-xyr"/>
+                                    <constraint firstItem="bEw-q2-Dp3" firstAttribute="top" secondItem="spZ-oG-fgh" secondAttribute="top" id="Dvb-97-IAX"/>
+                                    <constraint firstItem="Ep3-hy-Vuz" firstAttribute="leading" secondItem="bEw-q2-Dp3" secondAttribute="trailing" constant="8" id="Gqu-1E-LiN"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ep3-hy-Vuz" secondAttribute="trailing" id="bQF-lY-O6M"/>
+                                    <constraint firstItem="Ep3-hy-Vuz" firstAttribute="top" secondItem="spZ-oG-fgh" secondAttribute="top" id="f7D-bf-vZ2"/>
+                                    <constraint firstItem="Ep3-hy-Vuz" firstAttribute="width" secondItem="spZ-oG-fgh" secondAttribute="width" multiplier="0.2" id="p6U-Ea-Yrt"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ep3-hy-Vuz" secondAttribute="bottom" id="qfR-G7-fUx"/>
+                                    <constraint firstItem="bEw-q2-Dp3" firstAttribute="leading" secondItem="spZ-oG-fgh" secondAttribute="leading" id="uad-Ia-0k9"/>
+                                </constraints>
+                            </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="1. 123 =&gt; 1A2B" translatesAutoresizingMaskIntoConstraints="NO" id="Q00-93-AFV">
+                                <rect key="frame" x="16" y="94.5" width="343" height="498"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Q00-93-AFV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="1pf-02-i0M"/>
+                            <constraint firstItem="spZ-oG-fgh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="7yw-fJ-G9q"/>
+                            <constraint firstItem="Q00-93-AFV" firstAttribute="top" secondItem="spZ-oG-fgh" secondAttribute="bottom" constant="8" id="EEL-bi-kmq"/>
+                            <constraint firstItem="svQ-VC-2g9" firstAttribute="top" secondItem="Q00-93-AFV" secondAttribute="bottom" constant="8" id="MRf-mh-4Aj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Q00-93-AFV" secondAttribute="trailing" id="R4z-pZ-6I9"/>
+                            <constraint firstItem="svQ-VC-2g9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="RGV-Br-3pC"/>
+                            <constraint firstItem="spZ-oG-fgh" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.1" id="e0A-Ym-Y8N"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="svQ-VC-2g9" secondAttribute="trailing" id="hUc-hG-lRE"/>
+                            <constraint firstItem="spZ-oG-fgh" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="icg-hJ-d7a"/>
+                            <constraint firstItem="svQ-VC-2g9" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.1" id="l1u-z9-Mai"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="spZ-oG-fgh" secondAttribute="trailing" id="lpc-7W-eM7"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="svQ-VC-2g9" secondAttribute="bottom" id="yD8-m5-pRE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnGuess" destination="Ep3-hy-Vuz" id="U6f-tW-MRv"/>
+                        <outlet property="textGuess" destination="bEw-q2-Dp3" id="7AE-8g-1rk"/>
+                        <outlet property="textHist" destination="Q00-93-AFV" id="XyH-ns-DbL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
